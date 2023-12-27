@@ -13,6 +13,7 @@
   <meta name="author" content="" />
   <link rel="stylesheet" href="./assets/style/style.css">
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  
   <!--Replace with your tailwind.css once created-->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
   <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
@@ -109,6 +110,19 @@
     <div class="w-full mb-4 hidden lg:block ">
       <div class="w-1/2 h-2 mx-auto bg-white opacity-25 my-0 py-0 rounded-t"></div>
     </div>
+
+    <section class="py-8" id="section-video">
+      <div class="mx-auto w-full h-full h-96 flex flex-column  flex-col items-center text-center">
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight">
+        VEJA O VÍDEO EXPLICATIVO:
+      </h2>
+      <video class=" rounded-lg w-96" controls autoplay id="video-1">
+        <source src="assets/V!BE DO MILHÃO.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    </section>
     <!-- PARA QUEM É ESSE CURSO? -->
     <section class="py-8" id="section-1">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12 text-center">
@@ -122,11 +136,6 @@
             experiência.
           </p>
         </div>
-
-        <!-- Linha de divisão
-      <div class="w-full mb-4">
-        <div class="h-1 mx-auto bg-white w-64 opacity-25 my-0 py-0 rounded-t"></div>
-      </div> -->
 
       </div>
     </section>
@@ -159,13 +168,13 @@
               </p>
             </div>
             <div class="w-full sm:w-1/2 p-6">
-              <img class="w-full sm:h-64 mx-auto" src="./assets/img/success_key.jfif" alt="Homem em imagem gerada por IA segurando uma chave ">
+              <img class="w-full sm:h-64 mx-auto" src="./assets/img/success_key.jfif"
+                alt="Homem em imagem gerada por IA segurando uma chave ">
             </div>
           </div>
           <div class="flex flex-wrap flex-col-reverse sm:flex-row bg-transparent">
             <div class="w-full sm:w-1/2 p-6 mt-6">
-              <img class="w-5/5 sm:h-64 mx-auto"
-                src="./assets/img/estratergia.jfif" alt="Estratérgia">
+              <img class="w-5/5 sm:h-64 mx-auto" src="./assets/img/estratergia.jfif" alt="Estratérgia">
             </div>
             <div class="w-full sm:w-1/2 p-6 mt-6">
               <div class="align-middle">
@@ -198,8 +207,7 @@
               </div>
             </div>
             <div class="w-full sm:w-1/2 p-6 mt-6">
-              <img class="w-full sm:h-64 mx-auto"
-                src="./assets/img/real_time_interation.jfif"
+              <img class="w-full sm:h-64 mx-auto" src="./assets/img/real_time_interation.jfif"
                 alt="Análise em tempo real.">
             </div>
             <button
@@ -258,8 +266,7 @@
                 ser VIP!</a>
             </button>
             <div class="w-full sm:w-1/2 p-6">
-              <img class="w-full sm:h-64 mx-auto rounded-tl shadow " src="./assets/img/grupo_telegram.jpg"
-                alt="Chave">
+              <img class="w-full sm:h-64 mx-auto rounded-tl shadow " src="./assets/img/grupo_telegram.jpg" alt="Chave">
             </div>
 
             <div class="w-full sm:w-1/2 p-6 mt-6">
@@ -886,40 +893,42 @@
     <!-- Slider -->
     <script>
 
-      $($('#slider')).ready(function() {
+      $($('#slider')).ready(function () {
         let autoSlideTimeout = null
-          autoSlideTimeout = setInterval(() => {goNext()}, 4000)
+        autoSlideTimeout = setInterval(() => { goNext() }, 4000)
       })
 
       // clientWidth
       let defaultTransform = 0;
 
-      
+
 
       function goNext() {
         var slider = document.getElementById("slider");
         const slideItem = document.getElementById('slide-item-base-width')
         defaultTransform = defaultTransform - slideItem.clientWidth;
         if (Math.abs(defaultTransform) >= slider.scrollWidth / 1) defaultTransform = 0;
-        
+
         slider.style.transform = "translateX(" + defaultTransform + "px)";
 
       }
-      
+
       function goPrev() {
         const slideItem = document.getElementById('slide-item-base-width')
         var slider = document.getElementById("slider");
-        
+
         if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
         else defaultTransform = defaultTransform + slideItem.clientWidth;
-        
+
         slider.style.transform = "translateX(" + defaultTransform + "px)";
       }
-      
+
       next.addEventListener("click", goNext);
       prev.addEventListener("click", goPrev);
 
     </script>
+
+
   </main>
 </body>
 
