@@ -11,30 +11,37 @@
   <meta name="description" content="Simple landind page" />
   <meta name="keywords" content="" />
   <meta name="author" content="" />
-  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="./vibe-cdn/assets/style/style.css">
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-  
-  <!--Replace with your tailwind.css once created-->
+
+
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
-  <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+
   <style>
-    body {
-      background: #089603
+    #modal-container {
+      display: none;
+    }
+
+    #modal-content {
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+      /* Adicionado para rolar o conteúdo se necessário */
     }
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white" style="font-family: 'Source Sans Pro', sans-serif;">
+<body class="bg-gradient-to-r from-gray-700 via-gray-900 to-black leading-normal tracking-normal text-white"
+  style="font-family: 'Source Sans Pro', sans-serif;">
   <!--Nav-->
-  <main class="bg-gradient-to-b from-green-400 to-emerald-900">
+  <main class="">
 
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-4 flex items-center">
           <a class="toggleColour text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
             <!--Icon from: http://www.potlabicons.com/ -->
-            <img class="h-6 md:h-8 fill-current inline animate-bounce mr-1 sm:mr-0"
-              src="./assets/icons/bola_futebol.svg" alt="Bola de futebol.">
+
 
             V!BE DO MILHÃO
           </a>
@@ -55,26 +62,28 @@
           id="nav-content">
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
             <li class="mr-3">
-              <a class="nav-section inline-block py-2 px-4 text-black no-underline" href="#section-1">PARA QUEM É ESSE
+              <a class="toggleColour nav-section inline-block py-2 px-4 text-white no-underline" href="#section-1">PARA
+                QUEM É ESSE
                 CURSO?</a>
             </li>
             <li class="mr-3">
-              <a class="nav-section inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              <a class="toggleColour nav-section inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#section-2">O QUE PODEMOS TE OFERECER!</a>
             </li>
             <li class="mr-3">
-              <a class="nav-section inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              <a class="toggleColour nav-section inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#section-3">VEJA COMO NOSSO CURSO PODE TE AJUDAR!</a>
             </li>
             <li class="mr-3">
-              <a class="nav-section inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              <a class="toggleColour nav-section inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 href="#section-4">BÔNUS</a>
             </li>
           </ul>
           <button id="navAction"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-black font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            <a class="appearance-none" target="_blank" href="https://pay.hotmart.com/R85751371E?bid=1698923592625">Quero
-              ser VIP!</a>
+            class="mx-auto lg:mx-0 hover:underline bg-green-400 text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <a class="appearance-none" target="_blank" href="https://pay.hotmart.com/R85751371E?bid=1698923592625">
+              Quero ser VIP!
+            </a>
           </button>
         </div>
       </div>
@@ -93,15 +102,25 @@
           <p class="leading-normal text-2xl sm:mb-8 w-full ">
             Domine o Trader Esportivo <br />com nosso e-book explicativo.
           </p>
-          <button
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <button class="mx-auto lg:mx-0
+            hover:underline bg-div text-gray-800
+            font-bold rounded-full
+            my-6
+            py-4
+            px-8
+            shadow-lg
+            focus:outline-none
+            focus:shadow-outline
+            transform
+            bg-green-400
+            transition hover:scale-105 duration-300 ease-in-out">
             <a class="appearance-none" target="_blank" href="https://pay.hotmart.com/R85751371E?bid=1698923592625">Quero
               ser VIP!</a>
           </button>
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50 highlight-animation" src="assets/img/ebook.png" />
+          <img class="w-full md:w-4/5 z-50 highlight-animation" src="vibe-cdn/assets/img/ebook.png" />
         </div>
       </div>
     </div>
@@ -113,17 +132,68 @@
 
     <section class="py-8" id="section-video">
       <div class="mx-auto w-full h-full h-96 flex flex-column  flex-col items-center text-center">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight">
-        VEJA O VÍDEO EXPLICATIVO:
-      </h2>
-      <video class=" rounded-lg w-96" controls autoplay id="video-1">
-        <source src="assets/V!BE DO MILHÃO.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight">
+          VEJA O VÍDEO EXPLICATIVO:
+        </h2>
+        <video class=" rounded-lg w-96" controls id="video-1">
+          <source src="vibe-cdn/assets/video/V!BE DO MILHÃO.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
     </section>
     <!-- PARA QUEM É ESSE CURSO? -->
+    <section class="py-8" id="section-1">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12 text-center">
+        <div class="mx-auto w-full flex justify-center flex-col text-xl">
+          <h2 class=" my-2 text-5xl font-bold leading-tight uppercase colors-animation">
+            Sabe algo <span class="underline decoration-pink-500">mais lucrativo</span><br />que um gol? A gente sabe...
+          </h2>
+          Enquanto muitos focam em gols, nosso método exclusivo utiliza uma jogada silenciosa muitas vezes ignorada:
+          <h1 class="flex flex-row w-full justify-center text-4xl md:text-4xl lg:text-6xl my-5 mt-11  lg:mt-16 font-bold uppercase animate-bounce"><p class="swing-container">💸</p>os escanteios.<p class="swing-container">💸</p></h1> <br />
+          Com uma taxa de acertividade de até 90%, revelamos como maximizar seus lucros. Não fique de fora dessa tacada
+          certeira!<br />
+          Explore o universo estratégico dos escanteios e veja seus ganhos dispararem. O segredo está nos detalhes, e é
+          hora de <br />
+          revelá-los para potencializar seus resultados
+          </p>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-96 md:w-full">
+
+        <div class=" mx-auto w-auto h-fit">
+          <img class="rounded-lg w-80 md:w-96 h-auto object-cover"
+            src="vibe-cdn/assets/img/resultados/escanteio_1.jpg" alt="Resultado teste">
+          <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$100,00 Retorno:
+            R$900,30
+          </figcaption>
+        </div>
+        <div class=" mx-auto w-auto h-fit">
+          <img class="rounded-lg w-80 md:w-96 h-auto object-cover"
+            src="vibe-cdn/assets/img/resultados/escanteio_2.jpg" alt="Resultado teste">
+          <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$41,00 Retorno:
+            R$122,78
+          </figcaption>
+        </div>
+        <div class=" mx-auto w-auto h-fit">
+          <img class="rounded-lg w-80 md:w-96 h-auto object-cover"
+            src="vibe-cdn/assets/img/resultados/escanteio_3.jpg" alt="Resultado teste">
+          <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$10,00 Retorno:
+            R$47,50
+          </figcaption>
+        </div>
+        <div class=" mx-auto w-auto h-fit">
+          <img class="rounded-lg w-80 md:w-96 h-auto object-cover"
+            src="vibe-cdn/assets/img/resultados/escanteio_4.jpg" alt="Resultado teste">
+          <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$80,00 Retorno:
+            R$190,00
+          </figcaption>
+        </div>
+        </div>
+      </div>
+    </section>
     <section class="py-8" id="section-1">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12 text-center">
         <div class="mx-auto">
@@ -168,13 +238,13 @@
               </p>
             </div>
             <div class="w-full sm:w-1/2 p-6">
-              <img class="w-full sm:h-64 mx-auto" src="./assets/img/success_key.jfif"
+              <img class="w-full sm:h-64 mx-auto" src="./vibe-cdn/assets/img/success_key.jfif"
                 alt="Homem em imagem gerada por IA segurando uma chave ">
             </div>
           </div>
           <div class="flex flex-wrap flex-col-reverse sm:flex-row bg-transparent">
             <div class="w-full sm:w-1/2 p-6 mt-6">
-              <img class="w-5/5 sm:h-64 mx-auto" src="./assets/img/estratergia.jfif" alt="Estratérgia">
+              <img class="w-5/5 sm:h-64 mx-auto" src="./vibe-cdn/assets/img/estratergia.jfif" alt="Estratérgia">
             </div>
             <div class="w-full sm:w-1/2 p-6 mt-6">
               <div class="align-middle">
@@ -207,11 +277,11 @@
               </div>
             </div>
             <div class="w-full sm:w-1/2 p-6 mt-6">
-              <img class="w-full sm:h-64 mx-auto" src="./assets/img/real_time_interation.jfif"
+              <img class="w-full sm:h-64 mx-auto" src="./vibe-cdn/assets/img/real_time_interation.jfif"
                 alt="Análise em tempo real.">
             </div>
             <button
-              class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              class="mx-auto lg:mx-0 hover:underline bg-green-400 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
               <a class="appearance-none" target="_blank"
                 href="https://pay.hotmart.com/R85751371E?bid=1698923592625">Quero
                 ser VIP!</a>
@@ -255,18 +325,19 @@
               </p>
             </div>
             <div class="w-full sm:w-1/2 p-6">
-              <img class="w-full sm:h-64 mx-auto" src="./assets/img/ebook.png" alt="Chave">
+              <img class="w-full sm:h-64 mx-auto" src="./vibe-cdn/assets/img/ebook.png" alt="Chave">
             </div>
           </div>
           <div class="flex flex-wrap flex-col-reverse sm:flex-row">
             <button
-              class="block md:hidden mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              class="block md:hidden mx-auto lg:mx-0 green-400:underline bg-green-400 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
               <a class="appearance-none" target="_blank"
                 href="https://pay.hotmart.com/R85751371E?bid=1698923592625">Quero
                 ser VIP!</a>
             </button>
             <div class="w-full sm:w-1/2 p-6">
-              <img class="w-full sm:h-64 mx-auto rounded-tl shadow " src="./assets/img/grupo_telegram.jpg" alt="Chave">
+              <img class="w-full sm:h-64 mx-auto rounded-tl shadow " src="./vibe-cdn/assets/img/grupo_telegram.jpg"
+                alt="Chave">
             </div>
 
             <div class="w-full sm:w-1/2 p-6 mt-6">
@@ -285,7 +356,7 @@
             </div>
           </div>
           <button
-            class="hidden lg:block lg:mt-20 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            class="hidden lg:block lg:mt-20 mx-auto green-400:mx-0 hover:underline bg-green-400 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <a class="appearance-none" target="_blank" href="https://pay.hotmart.com/R85751371E?bid=1698923592625">Quero
               ser VIP!</a>
           </button>
@@ -328,7 +399,7 @@
                 <div id="slider"
                   class="h-full flex lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700">
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto" id="slide-item-base-width">
-                    <img src="./assets/img/smartphone-telegram-openning.png" alt="black chair and white table"
+                    <img src="./vibe-cdn/assets/img/smartphone-telegram-openning.png" alt="black chair and white table"
                       class="object-fit object-center w-full" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                       <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Não perca
@@ -341,7 +412,7 @@
                     </div>
                   </div>
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="./assets/img/grupo_whatsapp.png" alt="sitting area"
+                    <img src="./vibe-cdn/assets/img/grupo_whatsapp.png" alt="sitting area"
                       class="object-cover object-center w-full" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                       <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Não perca
@@ -354,7 +425,7 @@
                     </div>
                   </div>
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="./assets/img/bonus_doubts.png" alt="sitting area"
+                    <img src="./vibe-cdn/assets/img/bonus_doubts.png" alt="sitting area"
                       class="object-cover object-center w-full" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                       <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Não perca
@@ -367,7 +438,7 @@
                     </div>
                   </div>
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="./assets/img/bonus_analyst.png" alt="sitting area"
+                    <img src="./vibe-cdn/assets/img/bonus_analyst.png" alt="sitting area"
                       class="object-cover object-center w-full" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                       <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Não perca
@@ -380,7 +451,7 @@
                     </div>
                   </div>
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="./assets/img/bonus_analyst_live.png" alt="black chair and white table"
+                    <img src="./vibe-cdn/assets/img/bonus_analyst_live.png" alt="black chair and white table"
                       class="object-cover object-center w-full" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                       <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Não perca
@@ -393,7 +464,7 @@
                     </div>
                   </div>
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="./assets/img/bonus_odds.png" alt="sitting area"
+                    <img src="./vibe-cdn/assets/img/bonus_odds.png" alt="sitting area"
                       class="object-cover object-center w-full" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                       <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Não perca
@@ -406,7 +477,7 @@
                     </div>
                   </div>
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="./assets/img/bonus_mentoring.png" alt="sitting area"
+                    <img src="./vibe-cdn/assets/img/bonus_mentoring.png" alt="sitting area"
                       class="object-cover object-center w-full" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                       <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Não perca
@@ -414,12 +485,13 @@
                       <div class="flex h-full items-end pb-6">
                         <h3
                           class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                          Alavancagem guiada por nossos mentores especializados e reconhecidos pelo mercado, para te ajudar a dar o pontapé inicial.</h3>
+                          Alavancagem guiada por nossos mentores especializados e reconhecidos pelo mercado, para te
+                          ajudar a dar o pontapé inicial.</h3>
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="./assets/img/bonus_video_class.png" alt="sitting area"
+                    <img src="./vibe-cdn/assets/img/bonus_video_class.png" alt="sitting area"
                       class="object-cover object-center w-full" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                       <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Não perca
@@ -432,7 +504,7 @@
                     </div>
                   </div>
                   <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="./assets/img/bonus_management.png" alt="black chair and white table"
+                    <img src="./vibe-cdn/assets/img/bonus_management.png" alt="black chair and white table"
                       class="object-cover object-center w-full" />
                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                       <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">Não perca
@@ -583,7 +655,8 @@
                     </svg><!-- end classroom icon --></span>
                   <div>
                     <h3 class="font-semibold text-xl">Alavancagem guiada por nossos mentores especializados.</h3>
-                    <p class="mt-1">Maximizamos seus ganhos com o apoio e conhecimento dos nossos mentores especializados.</p>
+                    <p class="mt-1">Maximizamos seus ganhos com o apoio e conhecimento dos nossos mentores
+                      especializados.</p>
                   </div>
                 </div>
 
@@ -625,35 +698,9 @@
     </section>
 
 
-    <!-- Change the colour #f8fafc to match the previous section colour -->
-    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-          <g class="wave" fill="#f8fafc">
-            <path
-              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z">
-            </path>
-          </g>
-          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
-              <path
-                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                opacity="0.100000001"></path>
-              <path
-                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                opacity="0.100000001"></path>
-              <path
-                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                opacity="0.200000003"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
     <section class="container mx-auto text-center py-6 mb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-        <b>NÃO PERCA</b> ESSA OPORTUNIDADE!
+        NÃO PERCA ESSA OPORTUNIDADE!
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
@@ -673,7 +720,7 @@
         </p>
       </div>
       <button
-        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        class="mx-auto lg:mx-0 hover:underline bg-green-400 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
         <a class="appearance-none" target="_blank" href="https://pay.hotmart.com/R85751371E?bid=1698923592625">Quero ser
           VIP!</a>
       </button>
@@ -686,7 +733,7 @@
             <a class="text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
               <!--Icon from: http://www.potlabicons.com/ -->
               <img class="h-6 md:h-8 fill-current inline animate-bounce mr-1 sm:mr-0"
-                src="./assets/icons/bola_futebol.svg" alt="Bola de futebol.">
+                src="./vibe-cdn/assets/icons/bola_futebol_branca.svg" alt="Bola de futebol.">
               V!BE DO MILHÃO
             </a>
           </div>
@@ -719,9 +766,93 @@
       </div>
     </footer>
 
+    <!-- Modal video inicial -->
+    <div id="modal-container"
+      class="overflow-auto fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-40">
+      <!-- Video -->
+      <div id="modal-content" class="bg-white p-2 mx-auto flex flex-col items-center justify-start">
+        <h1 class="text-black font-bold text-center text-4xl md:text-6xl pb-2 mt-5 mb-10 colors-animation uppercase ">Assista e descubra<br/>um mundo de
+          possibilidades!</h1>
+        <video class="rounded-lg w-full max-w-md" controls id="video-2">
+          <source src="vibe-cdn/assets/video/V!BE DO MILHÃO Popup inicial.mp4" type="video/mp4">
+          O seu navegador não suporta vídeos.
+        </video>
+        <button id="modal-ver-resultados-btn" onclick="modalInicialMostrarResultados()" style="cursor: wait;"
+          class=" mx-auto lg:mx-0 hover:underline text-black font-black rounded-full my-6 py-4 px-8 shadow-lg bg-gray-400">
+          Ver resultados <span id="modal-resultados-contador"></span>
+        </button>
+
+
+        <!-- Resultados -->
+        <div id="modal-resultados" class="flex flex-col items-center justify-center w-screen">
+          <h2 class="text-black font-bold text-center text-xl pb-2 mt-5 mb-10">Nós da V!BE DO MILHÃO mostramos o nosso
+            método funcionando! <br /> Sem meias palavras, sem enrolação.</h2>
+          </pre>
+          </h1>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-96 md:w-full">
+
+            <div class=" mx-auto w-auto h-fit">
+              <img class="rounded-lg max-w-full h-auto object-cover"
+                src="vibe-cdn/assets/img/resultados/resultado_1.png" alt="Resultado teste">
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$210,00 Retorno:
+                R$405,30
+              </figcaption>
+            </div>
+            <div class=" mx-auto w-auto h-fit">
+              <img class="rounded-lg max-w-full h-auto object-cover"
+                src="vibe-cdn/assets/img/resultados/resultado_5.png" alt="Resultado teste">
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$384,00 Retorno:
+                R$730.01
+              </figcaption>
+            </div>
+            <div class=" mx-auto w-auto h-fit">
+              <img class="rounded-lg max-w-full h-auto object-cover"
+                src="vibe-cdn/assets/img/resultados/resultado_3.png" alt="Resultado teste">
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$63,00 Retorno:
+                R$242,55
+              </figcaption>
+            </div>
+            <div class=" mx-auto w-auto h-fit">
+              <img class="rounded-lg max-w-full h-auto object-cover"
+                src="vibe-cdn/assets/img/resultados/resultado_2.png" alt="Resultado teste">
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$90,00 Retorno:
+                R$319,50
+              </figcaption>
+            </div>
+
+            <div class=" mx-auto w-auto h-fit">
+              <img class="rounded-lg max-w-full h-auto object-cover"
+                src="vibe-cdn/assets/img/resultados/resultado_4.png" alt="Resultado teste">
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$150,00 Retorno:
+                R$444,00
+              </figcaption>
+            </div>
+
+            <div class=" mx-auto w-auto h-fit">
+              <img class="rounded-lg max-w-full h-auto object-cover"
+                src="vibe-cdn/assets/img/resultados/resultado_6.png" alt="Resultado teste">
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Entrada: R$33,00 Retorno:
+                R$1729,02
+              </figcaption>
+            </div>
+          </div>
+
+          <button id="modal-resultados-btn" onclick="modalInicialFecharModal()"
+            class="flex flex-row animate-bounce mx-auto lg:mx-0 hover:underline bg-green-400 text-black font-black rounded-full mt-10 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+
+            <div class="flex flex-row">
+              <div class="swing-container">💸</div>Quero aprender e mudar de vida<div class="swing-container">💸</div>
+            </div>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
     <a href="https://api.whatsapp.com/send?phone=5584996465565&text=Adorei%20o%20seu%20site!"
       class="fixed bottom-5 right-5 w-1/6 md:w-20" target="_blank">
-      <img class="animate-bounce delay-75" src="./assets/icons/whatsapp.svg" alt="Whatsapp">
+      <img class="animate-bounce delay-75" src="./vibe-cdn/assets/icons/whatsapp.svg" alt="Whatsapp">
     </a>
 
     <a class="text-center appearance-none"
@@ -729,207 +860,291 @@
       <p>Toque para conversar no WhatsApp</p>
     </a>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <!-- Header -->
-    <script>
-      $(document).ready(function () {
-        // Digitação no header
-        var frases = [
-          "Saia do zero.",
-          "não se aperte.",
-          "ALCANCE O SUCESSO."
-        ];
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Modal -->
+  <script>
+    function modalInicialMostrarResultados() {
+      $("div#modal-resultados").fadeIn("slow");
+      $("#modal-ver-resultados-btn").prop("disabled", true).removeClass("bg-green-400 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out").addClass("bg-gray-400");
+    }
 
+    function modalInicialFecharModal() {
+      $("body").css('overflow', 'auto')
+      $("html, body").animate({ scrollTop: 0 }, "fast");
+      $("#modal-container").dialog("close");
+      $("#modal-container").addClass("d-none");
+      if (!jQuery("#video-2").get(0).paused) {
+        jQuery("#video-2").trigger('pause');
+      }
+    }
 
-        var index = 0;
+    function modalInicialVerResultados() {
+      $("#modal-container").dialog("close");
+      $("#modal-container").addClass("d-none");
+      if (!jQuery("#video-2").get(0).paused) {
+        jQuery("#video-2").trigger('pause');
+      }
+    }
 
-        var intervalo;
-        const dynamicTextElement = $("#dynamic-text")
+    $(document).ready(function () {
+      $("div#modal-resultados").hide();
+      $("body").css('overflow', 'hidden');
 
-        function digitarFrase() {
-          var frase = frases[index];
-          var contador = 0;
+      // Abre o modal assim que a página for carregada
+      $("#modal-container").dialog({
+        autoOpen: true,
+        modal: true,
+        resizable: false,
+        draggable: false,
+        closeOnEscape: false,
+        open: function (event, ui) {
+          $(".ui-dialog-titlebar-close").hide();
+        }
+      });
+    });
+  </script>
 
-          dynamicTextElement.empty()
-          intervalo = setInterval(function () {
-            if (contador < frase.length) {
-              var char = frase.charAt(contador);
-              dynamicTextElement.append(char.toUpperCase());
-              contador++;
-            } else {
-              clearInterval(intervalo);
-              setTimeout(apagarFrase, 500); // Tempo de pausa após digitar a frase completa
-            }
-          }, 100);
+  <!-- Modal inicial - Contador -->
+  <script>
+    $(document).ready(function () {
+
+      setTimeout(() => {
+        $('#modal-resultados-contador').removeAttr("disable");
+      }, 2000);
+
+      let interval_id = null
+
+      $('#video-2').on('play', function () {
+        interval_id = setInterval(atualizarContador, 1000);
+      });
+      // Inicializa o contador
+      let contador = 22; // tempo do vídeo
+
+      // Define a função que será chamada a cada segundo
+      function atualizarContador() {
+
+        if (contador > 1) {
+          contador--;
+          // Atualiza o conteúdo da div com o valor do contador
+          $('#modal-resultados-contador').text(`(${contador})`);
+
+          return;
         }
 
-        function apagarFrase() {
-          var frase = frases[index];
-          var contador = frase.length;
-          intervalo = setInterval(function () {
-            if (contador >= 0) {
-              $("#texto-digitado").text(frase.substring(0, contador));
-              contador--;
-            } else {
-              clearInterval(intervalo);
-              index++;
-              if (index === frases.length) {
-                index = 0; // Reinicia o índice quando todas as frases forem exibidas
-              }
-              setTimeout(digitarFrase, 300); // Tempo de pausa após apagar a frase completa
+        $('#modal-resultados-contador').text("");
+        $("#modal-ver-resultados-btn").css("cursor", "pointer").addClass("bg-green-400 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out")
+        clearInterval(interval_id)
+      }
+
+      // Configura o intervalo para chamar a função a cada segundo
+
+    });
+  </script>
+
+  <!-- Header -->
+  <script>
+    $(document).ready(function () {
+      // Digitação no header
+      var frases = [
+        "Saia do zero.",
+        "não se aperte.",
+        "ALCANCE O SUCESSO."
+      ];
+
+
+      var index = 0;
+
+      var intervalo;
+      const dynamicTextElement = $("#dynamic-text")
+
+      function digitarFrase() {
+        var frase = frases[index];
+        var contador = 0;
+
+        dynamicTextElement.empty()
+        intervalo = setInterval(function () {
+          if (contador < frase.length) {
+            var char = frase.charAt(contador);
+            dynamicTextElement.append(char.toUpperCase());
+            contador++;
+          } else {
+            clearInterval(intervalo);
+            setTimeout(apagarFrase, 1500); // Tempo de pausa após digitar a frase completa
+          }
+        }, 100);
+      }
+
+      function apagarFrase() {
+        var frase = frases[index];
+        var contador = frase.length;
+        intervalo = setInterval(function () {
+          if (contador >= 0) {
+            dynamicTextElement.text(frase.substring(0, contador).toUpperCase());
+            contador--;
+          } else {
+            clearInterval(intervalo);
+            index++;
+            if (index === frases.length) {
+              index = 0; // Reinicia o índice quando todas as frases forem exibidas
             }
-          }, 100);
-        }
+            setTimeout(digitarFrase, 300); // Tempo de pausa após apagar a frase completa
+          }
+        }, 50);
+      }
 
-        digitarFrase(); // Inicia o efeito de digitação
+      digitarFrase(); // Inicia o efeito de digitação
 
+    });
+
+    $(document).ready(function () {
+      $(".nav-section").click(function () {
+        // Remove a classe 'font-bold' de todos os elementos com a classe 'nav-section'
+        $(".nav-section").removeClass("font-bold");
+
+        // Adiciona a classe 'font-bold' ao elemento clicado
+        $(this).addClass("font-bold");
       });
+    });
 
-      $(document).ready(function () {
-        $(".nav-section").click(function () {
-          // Remove a classe 'font-bold' de todos os elementos com a classe 'nav-section'
-          $(".nav-section").removeClass("font-bold");
-
-          // Adiciona a classe 'font-bold' ao elemento clicado
-          $(this).addClass("font-bold");
-        });
-      });
-
-      $(document).ready(function () {
-        $("#nav-content").find('a').click(function () {
-          $("#nav-content").addClass('hidden')
-        })
-
-        $(this).scroll(function () {
-          $("#nav-content").addClass('hidden')
-        })
+    $(document).ready(function () {
+      $("#nav-content").find('a').click(function () {
+        $("#nav-content").addClass('hidden')
       })
 
-      var scrollpos = window.scrollY;
-      var header = document.getElementById("header");
-      var navcontent = document.getElementById("nav-content");
-      var navaction = document.getElementById("navAction");
-      var brandname = document.getElementById("brandname");
-      var toToggle = document.querySelectorAll(".toggleColour");
+      $(this).scroll(function () {
+        $("#nav-content").addClass('hidden')
+      })
+    })
 
-      document.addEventListener("scroll", function () {
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
+    var scrollpos = window.scrollY;
+    var header = document.getElementById("header");
+    var navcontent = document.getElementById("nav-content");
+    var navaction = document.getElementById("navAction");
+    var brandname = document.getElementById("brandname");
+    var toToggle = document.querySelectorAll(".toggleColour");
 
-        if (scrollpos > 10) {
-          header.classList.add("bg-white");
-          navaction.classList.remove("bg-white");
+    document.addEventListener("scroll", function () {
+      /*Apply classes for slide in bar*/
+      scrollpos = window.scrollY;
 
-          navaction.classList.remove("text-gray-800");
-          navaction.classList.add("text-black");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-gray-800");
-            toToggle[i].classList.remove("text-white");
-          }
-          header.classList.add("shadow");
-          navcontent.classList.remove("bg-gray-100");
-          navcontent.classList.add("bg-white");
-        } else {
-          header.classList.remove("bg-white");
+      if (scrollpos > 10) {
+        header.classList.add("bg-white");
+        navaction.classList.remove("bg-black");
 
-          navaction.classList.add("bg-white");
-          navaction.classList.remove("text-white");
-          navaction.classList.add("text-gray-800");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-white");
-            toToggle[i].classList.remove("text-gray-800");
-          }
-
-          header.classList.remove("shadow");
-          navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-100");
+        navaction.classList.remove("text-gray-800");
+        navaction.classList.add("text-black");
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          toToggle[i].classList.add("text-gray-800");
+          toToggle[i].classList.remove("text-white");
         }
-      });
-    </script>
+        header.classList.add("shadow");
+        navcontent.classList.remove("bg-gray-100");
+        navcontent.classList.add("bg-white");
+      } else {
+        header.classList.remove("bg-white");
 
-    <!-- Nav -->
-    <script>
-      /*Toggle dropdown list*/
-      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+        navaction.classList.add("bg-white");
+        navaction.classList.remove("text-white");
+        navaction.classList.add("text-gray-800");
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          toToggle[i].classList.add("text-white");
+          toToggle[i].classList.remove("text-gray-800");
+        }
 
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
+        header.classList.remove("shadow");
+        navcontent.classList.remove("bg-white");
+        navcontent.classList.add("bg-gray-100");
+      }
+    });
+  </script>
 
-      document.onclick = check;
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
+  <!-- Nav -->
+  <script>
+    /*Toggle dropdown list*/
+    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
 
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, navMenu)) {
-            // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv.classList.remove("hidden");
-            } else {
-              navMenuDiv.classList.add("hidden");
-            }
+    var navMenuDiv = document.getElementById("nav-content");
+    var navMenu = document.getElementById("nav-toggle");
+
+    document.onclick = check;
+    function check(e) {
+      var target = (e && e.target) || (event && event.srcElement);
+
+      //Nav Menu
+      if (!checkParent(target, navMenuDiv)) {
+        // click NOT on the menu
+        if (checkParent(target, navMenu)) {
+          // click on the link
+          if (navMenuDiv.classList.contains("hidden")) {
+            navMenuDiv.classList.remove("hidden");
           } else {
-            // click both outside link and outside menu, hide menu
             navMenuDiv.classList.add("hidden");
           }
+        } else {
+          // click both outside link and outside menu, hide menu
+          navMenuDiv.classList.add("hidden");
         }
       }
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
+    }
+    function checkParent(t, elm) {
+      while (t.parentNode) {
+        if (t == elm) {
+          return true;
         }
-        return false;
+        t = t.parentNode;
       }
-    </script>
+      return false;
+    }
+  </script>
 
-    <!-- Slider -->
-    <script>
+  <!-- Slider -->
+  <script>
 
-      $($('#slider')).ready(function () {
-        let autoSlideTimeout = null
-        autoSlideTimeout = setInterval(() => { goNext() }, 4000)
-      })
+    $($('#slider')).ready(function () {
+      let autoSlideTimeout = null
+      autoSlideTimeout = setInterval(() => { goNext() }, 4000)
+    })
 
-      // clientWidth
-      let defaultTransform = 0;
-
-
-
-      function goNext() {
-        var slider = document.getElementById("slider");
-        const slideItem = document.getElementById('slide-item-base-width')
-        defaultTransform = defaultTransform - slideItem.clientWidth;
-        if (Math.abs(defaultTransform) >= slider.scrollWidth / 1) defaultTransform = 0;
-
-        slider.style.transform = "translateX(" + defaultTransform + "px)";
-
-      }
-
-      function goPrev() {
-        const slideItem = document.getElementById('slide-item-base-width')
-        var slider = document.getElementById("slider");
-
-        if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-        else defaultTransform = defaultTransform + slideItem.clientWidth;
-
-        slider.style.transform = "translateX(" + defaultTransform + "px)";
-      }
-
-      next.addEventListener("click", goNext);
-      prev.addEventListener("click", goPrev);
-
-    </script>
+    // clientWidth
+    let defaultTransform = 0;
 
 
-  </main>
+
+    function goNext() {
+      var slider = document.getElementById("slider");
+      const slideItem = document.getElementById('slide-item-base-width')
+      defaultTransform = defaultTransform - slideItem.clientWidth;
+      if (Math.abs(defaultTransform) >= slider.scrollWidth / 1) defaultTransform = 0;
+
+      slider.style.transform = "translateX(" + defaultTransform + "px)";
+
+    }
+
+    function goPrev() {
+      const slideItem = document.getElementById('slide-item-base-width')
+      var slider = document.getElementById("slider");
+
+      if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
+      else defaultTransform = defaultTransform + slideItem.clientWidth;
+
+      slider.style.transform = "translateX(" + defaultTransform + "px)";
+    }
+
+    next.addEventListener("click", goNext);
+    prev.addEventListener("click", goPrev);
+
+  </script>
+
+
+
+
+
 </body>
 
 </html>
